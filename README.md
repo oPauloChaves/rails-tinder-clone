@@ -95,3 +95,13 @@ OVERMIND_PROCFILE=Procfile.dev
 # in a terminal
 overmind start
 ```
+
+user authentication with devise
+
+- add devise to Gemfile
+- install it with `bundle install`
+- setup on the project `rails g devise:install`
+- add config in environments/development.rb
+- add notifications to application.html.erb
+- copy devise views `rails g devise:views`
+- https://github.com/heartcombo/devise
