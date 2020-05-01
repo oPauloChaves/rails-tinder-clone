@@ -37,6 +37,36 @@ docker-compose up --build
 # you only need --build the first you run or when you change the docker-compose file
 ```
 
-create the database
+create the database and initial migration
 
-`rails db:create`
+```sh
+rails db:create
+rails db:migrate
+```
+
+start the server. it should run on port 3000
+
+```sh
+rails s
+# localhost:3000
+```
+
+creating root route
+
+1. go to `config/routes.rb`
+  - add root route `root to: "public#home"` 
+2. create `public` controller `app/controllers/public_controller.rb` with:
+
+  ```ruby
+  class PublicController < ApplicationController
+    def home
+    end
+  end
+  ```
+
+3. create views folder for public controller `mkdir app/views/public`
+4. create view file for `home` action: `touch app/views/public/home.html.erb` with:
+
+  ```erb
+  <h1>test home</home>
+  ```
