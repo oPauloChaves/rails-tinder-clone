@@ -75,6 +75,23 @@ add bootstrap and jquery
 
 https://www.mashrurhossain.com/blog/rails6bootstrap4
 
+https://dev.to/vvo/a-rails-6-setup-guide-for-2019-and-2020-hf5
+
 ```sh
 yarn add bootstrap jquery popper.js
+```
+
+create Procfile.dev to start rails server and webpack server and run with overmind
+
+```sh
+# Procfile.dev
+
+web: rails server
+webpacker:  ./bin/webpack-dev-server
+
+# .env
+OVERMIND_PROCFILE=Procfile.dev
+
+# in a terminal
+overmind start
 ```
