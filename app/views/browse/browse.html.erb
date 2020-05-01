@@ -1,5 +1,12 @@
-<% @users.each do |user| %>
-<div class="well">
-  <p><%= user.first_name %></p>
+<ul id="slides">
+  <% @users.each_with_index do |user, i| %>
+    <li class="slide <%= i == 0 ? 'showing': nil %>" data-id="<%= user.id %>">
+      <p><%= user.first_name %></p>
+    </li>
+  <% end %>
+</ul>
+
+<div class="slide-controls">
+  <span class="controls" id="decline"><i class="fa fa-times-circle fa-2x"></i></span>
+  <span class="controls" id="approve"><i class="fa fa-heart fa-2x"></i></span>
 </div>
-<% end %>
