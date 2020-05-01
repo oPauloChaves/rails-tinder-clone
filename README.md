@@ -36,3 +36,7 @@ run docker to start postgresql and redis
 docker-compose up --build
 # you only need --build the first you run or when you change the docker-compose file
 ```
+
+create the database
+
+`rails db:create`
