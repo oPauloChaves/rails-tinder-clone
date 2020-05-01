@@ -29,3 +29,10 @@ vi config/database.yml
 # test db = tinder_clone_test
 # commmit - update database config
 ```
+
+run docker to start postgresql and redis
+
+```sh
+docker-compose up --build
+# you only need --build the first you run or when you change the docker-compose file
+```
