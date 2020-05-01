@@ -17,10 +17,7 @@
   opacity: 0;
   z-index: 1;
 
-  font-size: 40px;
-  padding: 40px;
   box-sizing: border-box;
-  background: #333;
   color: #fff;
 
   -webkit-transition: opacity 1s;
@@ -39,22 +36,7 @@
   justify-content: center;
 
   > span {
-    padding: 10px;
+    margin: 15px;
+    cursor: pointer;
   }
-}
-
-.slide:nth-of-type(1) {
-  background: red;
-}
-.slide:nth-of-type(2) {
-  background: orange;
-}
-.slide:nth-of-type(3) {
-  background: green;
-}
-.slide:nth-of-type(4) {
-  background: blue;
-}
-.slide:nth-of-type(5) {
-  background: purple;
 }
