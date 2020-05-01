@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+create rails application
 
-Things you may want to cover:
+`rails new tinder-clone --database=postgresql --skip-test --skip-action-cable --skip-turbo-links`
 
-* Ruby version
+commit inital files
 
-* System dependencies
+```sh
+git add .
+git commit -m "initial commit"
+```
 
-* Configuration
+copy `docker-compose.yml` to root of the project
 
-* Database creation
+```sh
+cp ../other-project/docker-compose.yml .
+# commit - add docker-compose
+```
 
-* Database initialization
+copy database config that is already and change database name for development and test
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```sh
+cp ../react-rails/config/database.yml config/database.yml
+vi config/database.yml
+# development db = tinder_clone_development
+# test db = tinder_clone_test
+# commmit - update database config
+```
