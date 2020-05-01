@@ -70,3 +70,11 @@ creating root route
   ```erb
   <h1>test home</home>
   ```
+
+add bootstrap and jquery
+
+https://www.mashrurhossain.com/blog/rails6bootstrap4
+
+```sh
+yarn add bootstrap jquery popper.js
+```
