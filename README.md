@@ -1,4 +1,6 @@
-# README
+# Tinder Clone - Desktop version
+
+[BUILD A TINDER CLONE - RUBY ON RAILS TUTORIAL](https://www.youtube.com/watch?v=P5gAaZq-sPs)
 
 create rails application
 
